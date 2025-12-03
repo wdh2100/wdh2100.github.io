@@ -9,34 +9,34 @@
 - title: "Grasse Portal"
   venue: Samsung Electronics
   role: Front-end, Back-end, Architect
-  detail: 사내 임직원(PM, PL, QA)를 위한 업무 사이트 개발
+  detail: Developed a back office site for in-house use
   skill: React, Mobx, Webpack, Babel, SpringBoot, Mybatis, AWS, Git
   year: 2017 ~ 2025
 
 - title: "Carrier Bridge Portal"
   venue: Samsung Electronics
   role: Front-end, Back-end, Maintainer
-  detail: 사내 임직원(PM, PL, QA)를 위한 업무 사이트 개발
+  detail: Developed a back office site for in-house use
   skill: Vue, Webpack, Babel, SpringBoot, Mybatis, AWS, Git
   year: 2021 ~ 2022
 
 - title: "Jenkins Deployment System"
   venue: Samsung Electronics
   role: DevOps
-  detail: webhook을 통해 배포 시스템 구축
+  detail: Built a deployment system using github webhooks
   skill: Jenkins, Shell, AWS, Git, Github
   year: 2018 ~ 2020
 
 - title: "Circle CI, Spinnaker Deployment System"
   venue: Samsung Electronics
   role: DevOps
-  detail: Circle CI와 kubernetes로 이루어진 배포 시스템 구축
+  detail: Built a deployment system with Circle CI and Kubernetes
   skill: Circle CI, Spinnaker, Shell, Docker, Kubernetes, AWS, Jira, Git, Github
   year: 2019 ~ 2021
 
 - title: "Open Mobile Configuration Portal"
   venue: Samsung Electronics
   role: Front-end, Back-end, Maintainer
-  detail: Fullstack 유지보수 담당
+  detail: Responsible for full-stack maintenance
   skill: JSP, Jquery, SpringMVC, Mybatis, AWS, Git
   year: 2017 ~ 2018
