@@ -1,27 +1,28 @@
 <div class="user-details">
-  <h1> Open Source </h1>
+    <h1> Open Source </h1>
 </div>
 
 <div class="row">
-  <div class="col">
-    <ol>
-      {% for work in site.data.opensource %}
-        <li>
-          <strong>
-            {{work.title}} <br>
-          </strong>
-          {{work.venue}} <br>
-          {{work.role}}, {{work.year}} <br>
-          <b>Technology Stack</b> : {{work.skill}}<br>
-          <b>Description</b> : {{work.detail}}<br>
-          {% if work.link %}
-            [<a href="{{work.link}}" target="_blank">Link</a>]
-          {% endif %}
-          {% if forloop.last == false %}
-            <br><br>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ol>
-  </div>
+    <div class="col">
+        <ol>
+            {% for work in site.data.opensource %}
+            <li>
+                <strong>
+                    {{work.title}} <br>
+                </strong>
+                {{work.venue}} <br>
+                <b>Role</b> :{{work.role}} <br>
+                <b>Year</b> :{{work.year}} <br>
+                <b>Technology Stack</b> : {{work.skill}}<br>
+                <b>Description</b> : {{work.detail}}<br>
+                {% if work.link %}
+                [<a href="{{work.link}}" target="_blank">Link</a>]
+                {% endif %}
+                {% if forloop.last == false %}
+                <br><br>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
 </div>
