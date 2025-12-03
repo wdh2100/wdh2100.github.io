@@ -6,3 +6,5 @@ _site
 Gemfile.lock
 .DS_Store
 node_modules
+/.idea/
+/GEMINI.md

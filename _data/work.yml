@@ -1,42 +1,41 @@
-- title: "mui-datatables"
-  venue: openSources
-  role: Front-end, Maintainer
-  detail: Materil-ui기반의 DataTable의 3.5.0이후 버전부터 maintainer로 활동하고 있습니다.
-  skill: React, Babel, Jest, Rollup
-  year: 2019 ~
-  link: https://github.com/gregnb/mui-datatables
-
-- title: "Admin Portal using JSP"
+- title: "Playground"
   venue: Samsung Electronics
-  role: Front-end, Back-end, Maintainer
-  detail: SpringMVC(3.x)기반의 Back-End와 JSP와 Jquery로 이루어진 FrontEnd 웹사이트의 유지보수 담당
-  skill: JSP, Jquery, SpringMVC, Mybatis, AWS, Git
-  year: 2017 ~ 2018
+  role: Front-end
+  detail: AI Productivity services for in-house use
+  skill: Next.js, Plasmo, Tailwind, Zustand, react-query
+  year: 2025 ~
 
-- title: "Admin Portal using React"
+- title: "Grasse Portal"
   venue: Samsung Electronics
   role: Front-end, Back-end, Architect
-  detail: SpringBoot(2.3.x)기반의 Back-End와 React(16.8), material-ui로 이루어진 SPA 웹사이트 제작
+  detail: 사내 임직원(PM, PL, QA)를 위한 업무 사이트 개발
   skill: React, Mobx, Webpack, Babel, SpringBoot, Mybatis, AWS, Git
-  year: 2017 ~
+  year: 2017 ~ 2025
 
-- title: "Admin Portal using Vue"
+- title: "Carrier Bridge Portal"
   venue: Samsung Electronics
   role: Front-end, Back-end, Maintainer
-  detail: Vue(2.x) 기반의 SPA 웹사이트 유지보수
+  detail: 사내 임직원(PM, PL, QA)를 위한 업무 사이트 개발
   skill: Vue, Webpack, Babel, SpringBoot, Mybatis, AWS, Git
-  year: 2021 ~
+  year: 2021 ~ 2022
 
 - title: "Jenkins Deployment System"
   venue: Samsung Electronics
-  role: Dev Ops
-  detail: github hook 트리거로 자동 빌드, 테스트 후 배포 시스템 구축
+  role: DevOps
+  detail: webhook을 통해 배포 시스템 구축
   skill: Jenkins, Shell, AWS, Git, Github
   year: 2018 ~ 2020
 
 - title: "Circle CI, Spinnaker Deployment System"
   venue: Samsung Electronics
-  role: Dev Ops
-  detail: Circle CI를 통해서 docker build -> ecr -> spinnaker -> kubernetes로 이루어진 배포 시스템 구축
+  role: DevOps
+  detail: Circle CI와 kubernetes로 이루어진 배포 시스템 구축
   skill: Circle CI, Spinnaker, Shell, Docker, Kubernetes, AWS, Jira, Git, Github
   year: 2019 ~ 2021
+
+- title: "Open Mobile Configuration Portal"
+  venue: Samsung Electronics
+  role: Front-end, Back-end, Maintainer
+  detail: Fullstack 유지보수 담당
+  skill: JSP, Jquery, SpringMVC, Mybatis, AWS, Git
+  year: 2017 ~ 2018
