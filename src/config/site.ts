@@ -9,6 +9,6 @@ export const site = {
   userDescriptionEng:
     "Hello 😊, I'm DoHyeong Woo, based in Korea. I am a passionate and creative Front-end Developer.",
   email: 'wdh2100@gmail.com',
-  linkedin: '도형-우-007b57105',
+  linkedin: '%EB%8F%84%ED%98%95-%EC%9A%B0-007b57105',
   github: 'wdh2100',
 };
