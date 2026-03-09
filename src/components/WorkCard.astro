@@ -32,7 +32,7 @@ const skills = skill.split(', ');
   <p class="text-sm text-slate-500 mb-1">
     <span class="font-medium text-slate-600">Role:</span> {role}
   </p>
-  <p class="text-sm text-slate-600 mb-3">{detail}</p>
+  {detail && <p class="text-sm text-slate-600 mb-3">{detail}</p>}
 
   <div class="flex flex-wrap">
     {skills.map((s) => <span class="skill-badge">{s}</span>)}
