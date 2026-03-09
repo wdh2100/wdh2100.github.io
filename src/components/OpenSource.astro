@@ -1,0 +1,9 @@
+---
+import { opensource } from '../data/opensource';
+import WorkCard from './WorkCard.astro';
+---
+
+<h2 class="section-title">Open Source</h2>
+<div class="space-y-4">
+  {opensource.map((item) => <WorkCard {...item} />)}
+</div>

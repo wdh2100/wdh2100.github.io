@@ -8,3 +8,6 @@ Gemfile.lock
 node_modules
 /.idea/
 /GEMINI.md
+.vscode
+dist/
+.astro/
