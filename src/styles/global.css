@@ -8,6 +8,14 @@
   }
 }
 
+/* particles canvas를 사이드바 영역 안에만 가두기 */
+#particles-js canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 @layer components {
   .skill-badge {
     @apply inline-block bg-indigo-50 text-indigo-700 text-xs font-medium px-2 py-0.5 rounded-full border border-indigo-100 mr-1 mb-1;
