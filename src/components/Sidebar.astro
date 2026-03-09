@@ -1,0 +1,33 @@
+---
+import { site } from '../config/site';
+---
+
+<aside class="relative md:fixed md:top-0 md:left-0 md:h-screen md:w-72 bg-sidebar text-white flex flex-col items-center justify-center text-center px-8 py-12 z-10">
+  <div id="particles-js" class="absolute inset-0 pointer-events-none"></div>
+  <div class="relative z-10">
+    <h1 class="text-3xl font-bold text-white mb-1">{site.username}</h1>
+    <p class="text-indigo-300 font-medium text-sm uppercase tracking-widest mb-6">{site.userTitle}</p>
+
+    <div class="flex justify-center gap-4 mb-6">
+      <a aria-label="Send email" target="_blank" href={`mailto:${site.email}`}
+         class="text-slate-400 hover:text-white transition-colors duration-200 text-lg">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a aria-label="My Github" target="_blank" href={`https://github.com/${site.github}`}
+         class="text-slate-400 hover:text-white transition-colors duration-200 text-lg">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a aria-label="My LinkedIn" target="_blank" href={`https://www.linkedin.com/in/${site.linkedin}`}
+         class="text-slate-400 hover:text-white transition-colors duration-200 text-lg">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+
+    <nav class="flex flex-col gap-1 text-sm">
+      <a href="#about"      class="text-slate-400 hover:text-white transition-colors duration-200">About</a>
+      <a href="#education"  class="text-slate-400 hover:text-white transition-colors duration-200">Education</a>
+      <a href="#opensource" class="text-slate-400 hover:text-white transition-colors duration-200">Open Source</a>
+      <a href="#work"       class="text-slate-400 hover:text-white transition-colors duration-200">Works</a>
+    </nav>
+  </div>
+</aside>

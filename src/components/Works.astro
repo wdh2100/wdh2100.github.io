@@ -1,0 +1,9 @@
+---
+import { work } from '../data/work';
+import WorkCard from './WorkCard.astro';
+---
+
+<h2 class="section-title">Works</h2>
+<div class="space-y-4">
+  {work.map((item) => <WorkCard {...item} />)}
+</div>

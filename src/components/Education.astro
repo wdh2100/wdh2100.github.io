@@ -1,0 +1,13 @@
+---
+import { education } from '../data/education';
+---
+
+<h2 class="section-title">Education</h2>
+<div class="space-y-3">
+  {education.map((item) => (
+    <div class="card flex flex-col sm:flex-row sm:items-center gap-2">
+      <span class="text-xs font-mono text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full whitespace-nowrap">{item.date}</span>
+      <span class="text-slate-700 font-medium">{item.descr}, {item.school}</span>
+    </div>
+  ))}
+</div>

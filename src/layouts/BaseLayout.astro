@@ -1,0 +1,72 @@
+---
+import { site } from '../config/site';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.title, description = site.description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="7tdenP2ypZTs8weBClXTP9Nkv11W3wvFXBpbgdQMhZc" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-slate-50 font-sans text-slate-700">
+    <slot />
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" is:inline></script>
+    <!-- Sweet Scroll -->
+    <script src="/js/sweet-scroll.min.js" is:inline></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new SweetScroll({});
+
+        tsParticles.load('particles-js', {
+          particles: {
+            number: { value: 30, density: { enable: true, value_area: 800 } },
+            color: { value: '#ffffff' },
+            shape: { type: 'polygon' },
+            opacity: { value: 0.5, random: false },
+            size: { value: 3, random: true },
+            links: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 4, direction: 'none', random: true, out_mode: 'out' },
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onClick: { enable: true, mode: 'push' },
+              resize: true,
+            },
+          },
+          retina_detect: true,
+        });
+      });
+    </script>
+  </body>
+</html>

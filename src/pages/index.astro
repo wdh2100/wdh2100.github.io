@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import About from '../components/About.astro';
+import Education from '../components/Education.astro';
+import OpenSource from '../components/OpenSource.astro';
+import Works from '../components/Works.astro';
+import { site } from '../config/site';
+---
+
+<BaseLayout title={site.title} description={site.description}>
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <Sidebar />
+
+    <main class="md:ml-72 flex-1 px-6 py-10 md:px-12 md:py-14 max-w-4xl">
+      <section id="about" class="mb-14">
+        <About />
+      </section>
+      <section id="education" class="mb-14">
+        <Education />
+      </section>
+      <section id="opensource" class="mb-14">
+        <OpenSource />
+      </section>
+      <section id="work" class="mb-14">
+        <Works />
+      </section>
+
+      <footer class="mt-10 pt-6 border-t border-slate-200 text-center text-sm text-slate-400">
+        <p>&copy; {new Date().getFullYear()} {site.username}. Built with Astro</p>
+      </footer>
+    </main>
+  </div>
+</BaseLayout>

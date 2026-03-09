@@ -1,0 +1,61 @@
+export interface WorkItem {
+  title: string;
+  venue: string;
+  role: string;
+  detail: string;
+  skill: string;
+  year: string;
+  link?: string;
+}
+
+export const work: WorkItem[] = [
+  {
+    title: 'Playground',
+    venue: 'Samsung Electronics',
+    role: 'Front-end',
+    detail: 'AI Productivity services for in-house use',
+    skill: 'Next.js, Plasmo, Tailwind, Zustand, react-query',
+    year: '2025 ~',
+    link: 'https://www.youtube.com/watch?v=u4VlLvA6VAA&t=90s',
+  },
+  {
+    title: 'Grasse Portal',
+    venue: 'Samsung Electronics',
+    role: 'Front-end, Back-end, Architect',
+    detail: 'Developed a back office site for in-house use',
+    skill: 'React, Mobx, Webpack, Babel, SpringBoot, Mybatis, AWS, Git',
+    year: '2017 ~ 2025',
+  },
+  {
+    title: 'Carrier Bridge Portal',
+    venue: 'Samsung Electronics',
+    role: 'Front-end, Back-end, Maintainer',
+    detail: 'Developed a back office site for in-house use',
+    skill: 'Vue, Webpack, Babel, SpringBoot, Mybatis, AWS, Git',
+    year: '2021 ~ 2022',
+  },
+  {
+    title: 'Jenkins Deployment System',
+    venue: 'Samsung Electronics',
+    role: 'DevOps',
+    detail: 'Built a deployment system using github webhooks',
+    skill: 'Jenkins, Shell, AWS, Git, Github',
+    year: '2018 ~ 2020',
+  },
+  {
+    title: 'Circle CI, Spinnaker Deployment System',
+    venue: 'Samsung Electronics',
+    role: 'DevOps',
+    detail: 'Built a deployment system with Circle CI and Kubernetes',
+    skill: 'Circle CI, Spinnaker, Shell, Docker, Kubernetes, AWS, Jira, Git, Github',
+    year: '2019 ~ 2021',
+  },
+  {
+    title: 'Open Mobile Configuration Portal',
+    venue: 'Samsung Electronics',
+    role: 'Front-end, Back-end, Maintainer',
+    detail: 'Responsible for full-stack maintenance',
+    skill: 'JSP, Jquery, SpringMVC, Mybatis, AWS, Git',
+    year: '2017 ~ 2018',
+  },
+];
