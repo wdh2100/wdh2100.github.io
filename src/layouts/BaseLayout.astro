@@ -49,6 +49,7 @@ const { title = site.title, description = site.description } = Astro.props;
         new SweetScroll({});
 
         tsParticles.load('particles-js', {
+          fullScreen: { enable: false },
           particles: {
             number: { value: 30, density: { enable: true, value_area: 800 } },
             color: { value: '#ffffff' },
