@@ -12,7 +12,7 @@ export const work: WorkItem[] = [
   {
     title: 'Samsung Cloud Web',
     venue: 'Samsung Electronics',
-    role: 'Front-end TL',
+    role: 'Front-end TL, Architect',
     detail: 'Samsung Cloud Web',
     skill: 'Next.js, Tailwind, Zustand, react-query',
     year: '2026 ~',
