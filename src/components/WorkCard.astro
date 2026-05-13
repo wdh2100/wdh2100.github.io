@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { title, venue, role, detail, skill, year, link } = Astro.props;
-const skills = skill.split(', ');
+const skills = skill.split(', ').filter(Boolean);
 ---
 
 <div class="card">

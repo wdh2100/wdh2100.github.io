@@ -10,12 +10,21 @@ export interface WorkItem {
 
 export const work: WorkItem[] = [
   {
+    title: 'Samsung Cloud Web',
+    venue: 'Samsung Electronics',
+    role: 'Front-end TL',
+    detail: 'Samsung Cloud Web',
+    skill: 'Next.js, Tailwind, Zustand, react-query',
+    year: '2026 ~',
+    link: 'https://www.samsungcloud.com',
+  },
+  {
     title: 'Playground',
     venue: 'Samsung Electronics',
     role: 'Front-end',
     detail: 'AI Productivity services for in-house use',
     skill: 'Next.js, Plasmo, Tailwind, Zustand, react-query',
-    year: '2025 ~',
+    year: '2025',
     link: 'https://www.youtube.com/watch?v=u4VlLvA6VAA&t=90s',
   },
   {
