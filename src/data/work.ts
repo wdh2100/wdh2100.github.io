@@ -12,7 +12,7 @@ export const work: WorkItem[] = [
   {
     title: 'Samsung Cloud Web',
     venue: 'Samsung Electronics',
-    role: 'Front-end TL, Architect',
+    role: 'Front-end TL, Architector',
     detail: 'Samsung Cloud Web',
     skill: 'Next.js, Tailwind, Zustand, react-query',
     year: '2026 ~',
@@ -30,7 +30,7 @@ export const work: WorkItem[] = [
   {
     title: 'Grasse Portal',
     venue: 'Samsung Electronics',
-    role: 'Front-end, Back-end, Architect',
+    role: 'Front-end, Back-end, Architector',
     detail: 'Developed a back office site for in-house use',
     skill: 'React, Mobx, Webpack, Babel, SpringBoot, Mybatis, AWS, Git',
     year: '2017 ~ 2025',
