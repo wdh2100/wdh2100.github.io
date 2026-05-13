@@ -69,8 +69,8 @@
     integrations: [tailwind()],
   })
   ```
-- [ ] 7.3 GitHub 레포 Settings → Pages → Source를 `GitHub Actions`로 변경
-- [ ] 7.4 main push 후 Actions 탭에서 배포 확인
+- [x] 7.3 GitHub 레포 Settings → Pages → Source를 `GitHub Actions`로 변경
+- [x] 7.4 main push 후 Actions 탭에서 배포 확인
 
 ### 8. 구 Jekyll 파일 정리
 - [x] 8.1 `_includes/`, `_layouts/`, `_sass/`, `_data/` 제거
