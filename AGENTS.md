@@ -1,53 +1,65 @@
-# Project Overview
+# CLAUDE.md
 
-This is a personal portfolio website built with Jekyll using the "Particle" theme. It's designed to showcase work experience, education, and personal projects.
+Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
-**Key Technologies:**
+**Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
-*   **Jekyll:** A static site generator that uses Markdown, Liquid templates, and HTML/CSS to create websites.
-*   **SASS:** A CSS preprocessor for styling.
-*   **Gulp:** A toolkit for automating painful or time-consuming tasks in the development workflow.
-*   **Particle.js:** A lightweight JavaScript library for creating particles.
-*   **GitHub Pages:** The website is hosted on GitHub Pages.
+## 1. Think Before Coding
 
-**Architecture:**
+**Don't assume. Don't hide confusion. Surface tradeoffs.**
 
-The website follows a standard Jekyll project structure:
+Before implementing:
+- State your assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them - don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
 
-*   `_config.yml`: Main configuration file for the site, including user information.
-*   `_data/`: Contains data files (`work.yml`, `education.yml`) that populate the portfolio sections.
-*   `_includes/`: Reusable HTML components.
-*   `_layouts/`: HTML templates for pages.
-*   `_sass/`: SASS files for styling.
-*   `assets/`: Contains CSS, JavaScript, fonts, and images.
-*   `index.html`: The main entry point of the site.
+## 2. Simplicity First
 
-# Building and Running
+**Minimum code that solves the problem. Nothing speculative.**
 
-To run the website locally, you need to have Node.js, Yarn, and Jekyll installed.
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
 
-1.  **Install Dependencies:**
-    ```bash
-    yarn
-    ```
+Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
 
-2.  **Run the development server:**
-    ```bash
-    gulp
-    ```
+## 3. Surgical Changes
 
-This will compile the assets, start a local server, and automatically reload the browser when changes are made.
+**Touch only what you must. Clean up only your own mess.**
 
-# Development Conventions
+When editing existing code:
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- If you notice unrelated dead code, mention it - don't delete it.
 
-**Content Customization:**
+When your changes create orphans:
+- Remove imports/variables/functions that YOUR changes made unused.
+- Don't remove pre-existing dead code unless asked.
 
-*   **Personal Information:** Edit `_config.yml` to change your name, title, description, and social media links.
-*   **Work Experience:** Add or modify entries in `_data/work.yml`.
-*   **Education:** Add or modify entries in `_data/education.yml`.
-*   **About Section:** The "About Me" section is populated from the `user_description_kor` and `user_description_eng` fields in `_config.yml`.
+The test: Every changed line should trace directly to the user's request.
 
-**Appearance Customization:**
+## 4. Goal-Driven Execution
 
-*   **Colors:** Edit the SASS variables in the `_sass/` directory to change the color scheme.
-*   **Particles:** The particle animation can be customized by editing the JSON data in the `particle` function in `assets/js/main.js`. Refer to the [Particle.js documentation](https://github.com/VincentGarreau/particles.js/) for more information.
+**Define success criteria. Loop until verified.**
+
+Transform tasks into verifiable goals:
+- "Add validation" -> "Write tests for invalid inputs, then make them pass"
+- "Fix the bug" -> "Write a test that reproduces it, then make it pass"
+- "Refactor X" -> "Ensure tests pass before and after"
+
+For multi-step tasks, state a brief plan:
+```text
+1. [Step] -> verify: [check]
+2. [Step] -> verify: [check]
+3. [Step] -> verify: [check]
+```
+
+Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+---
+
+**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
